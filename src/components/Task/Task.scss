@@ -1,0 +1,46 @@
+.task {
+  margin: 5px;
+  border: 1px dashed #fff;
+  transition: all 300ms ease;
+
+  &:hover {
+    color: #000;
+    background: #fff;
+  }
+
+  p {
+    padding: 0 1rem;
+  }
+  animation: pull-up 500ms ease;
+
+  @keyframes pull-up {
+    0% {
+      transform: translateY(100%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.task-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #000;
+  h5 {
+    margin: 0px;
+  }
+
+  img {
+    cursor: pointer;
+    transition: scale 200ms ease;
+    &:hover {
+      scale: 1.2;
+    }
+  }
+}
